@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | HashFlow Pro Hashtag Generator</title>
+    <meta name="description" content="HashFlow Pro's privacy policy. Learn how we protect your data and privacy while using our free hashtag generation tools.">
+    <meta name="keywords" content="hashtag generator privacy policy, data protection, privacy-first tools, no data collection, browser-based processing">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #7c3aed;
+            --primary-light: #8b5cf6;
+            --secondary: #f59e0b;
+            --accent: #10b981;
+            --dark: #0f172a;
+            --darker: #020617;
+            --light: #f8fafc;
+            --gray: #64748b;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --border: rgba(255, 255, 255, 0.1);
+            --shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        [data-theme="light"] {
+            --primary: #7c3aed;
+            --primary-light: #8b5cf6;
+            --secondary: #d97706;
+            --accent: #059669;
+            --dark: #f8fafc;
+            --darker: #e2e8f0;
+            --light: #0f172a;
+            --gray: #475569;
+            --card-bg: rgba(255, 255, 255, 0.9);
+            --border: rgba(0, 0, 0, 0.1);
+            --shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: linear-gradient(135deg, var(--darker) 0%, var(--dark) 100%);
+            color: var(--light);
+            min-height: 100vh;
+            line-height: 1.6;
+            transition: all 0.3s ease;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .navbar {
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        [data-theme="light"] .navbar {
+            background: rgba(248, 250, 252, 0.95);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-small {
+            font-size: 1.8rem;
+            font-weight: 800;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-decoration: none;
+        }
+
+        .page-content {
+            background: var(--card-bg);
+            backdrop-filter: blur(15px);
+            border-radius: 24px;
+            padding: 50px;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
+            margin: 40px auto;
+            max-width: 1000px;
+        }
+
+        .page-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: var(--light);
+            text-align: center;
+        }
+
+        .page-content h2 {
+            font-size: 1.8rem;
+            margin: 40px 0 20px;
+            color: var(--light);
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 10px;
+        }
+
+        .page-content h3 {
+            font-size: 1.4rem;
+            margin: 30px 0 15px;
+            color: var(--light);
+        }
+
+        .page-content p {
+            margin-bottom: 20px;
+            color: var(--gray);
+            line-height: 1.8;
+        }
+
+        .page-content ul, .page-content ol {
+            margin-left: 30px;
+            margin-bottom: 20px;
+            color: var(--gray);
+        }
+
+        .page-content li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        .privacy-highlight {
+            background: rgba(16, 185, 129, 0.1);
+            border-left: 4px solid #10b981;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+
+        .privacy-highlight h4 {
+            color: #10b981;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .definition-list {
+            margin: 30px 0;
+            background: rgba(255, 255, 255, 0.02);
+            padding: 30px;
+            border-radius: 16px;
+            border: 1px solid var(--border);
+        }
+
+        .definition-item {
+            margin-bottom: 20px;
+        }
+
+        .definition-item strong {
+            color: var(--light);
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .update-history {
+            margin-top: 40px;
+            padding: 30px;
+            background: rgba(124, 58, 237, 0.05);
+            border-radius: 16px;
+        }
+
+        .footer {
+            margin-top: 80px;
+            padding: 40px 20px;
+            border-top: 1px solid var(--border);
+            color: var(--gray);
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 768px) {
+            .page-content {
+                padding: 30px 20px;
+            }
+            
+            .page-content h1 {
+                font-size: 2rem;
+            }
+            
+            .privacy-highlight {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo-small">HashFlow Pro</a>
+            <div class="nav-right">
+                <a href="index.html" class="nav-link">Back to Home</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="page-content">
+            <h1><i class="fas fa-shield-alt"></i> Privacy Policy</h1>
+            <p style="text-align: center; margin-bottom: 40px;"><strong>Last Updated:</strong> October 26, 2023</p>
+            
+            <div class="privacy-highlight">
+                <h4><i class="fas fa-lock"></i> Our Core Privacy Principle</h4>
+                <p><strong>HashFlow Pro processes all data locally in your browser.</strong> We do not send your keywords, captions, or generated hashtags to any server. Your content never leaves your device, ensuring maximum privacy and security.</p>
+            </div>
+            
+            <h2>1. Information We Don't Collect</h2>
+            <p>HashFlow Pro is designed with privacy as a core feature. We deliberately <strong>do not collect</strong>:</p>
+            <ul>
+                <li>Your social media captions or descriptions</li>
+                <li>Keywords you enter into our tools</li>
+                <li>Generated hashtag results</li>
+                <li>Personal identification information</li>
+                <li>IP addresses (beyond basic analytics for service improvement)</li>
+                <li>Browser cookies for tracking purposes</li>
+                <li>Location data</li>
+            </ul>
+            
+            <h2>2. How Our Tools Work (Technically)</h2>
+            <p>All HashFlow Pro tools operate using client-side JavaScript that runs entirely in your web browser:</p>
+            <div class="definition-list">
+                <div class="definition-item">
+                    <strong>Free Hashtag Generator</strong>
+                    <p>Processes your keywords locally using built-in algorithms. No network requests are made for hashtag generation.</p>
+                </div>
+                <div class="definition-item">
+                    <strong>AI Hashtag Generator</strong>
+                    <p>Uses local natural language processing libraries to analyze your content. No data is sent to external AI services.</p>
+                </div>
+                <div class="definition-item">
+                    <strong>Trending Hashtags Database</strong>
+                    <p>We maintain a static database of popular hashtags that is periodically updated. This data is downloaded once when you visit the page and cached locally.</p>
+                </div>
+            </div>
+            
+            <h2>3. Data We Do Collect (Minimal Analytics)</h2>
+            <p>We collect minimal, anonymized analytics to improve our service:</p>
+            <ul>
+                <li><strong>Usage Statistics:</strong> Aggregated, anonymous data about tool usage (e.g., "X users generated hashtags today")</li>
+                <li><strong>Feature Popularity:</strong> Which tools are used most frequently</li>
+                <li><strong>Performance Metrics:</strong> Load times and technical performance data</li>
+                <li><strong>Error Reports:</strong> Anonymous error logs to fix bugs</li>
+            </ul>
+            <p>All analytics data is aggregated and cannot be traced back to individual users.</p>
+            
+            <h2>4. Third-Party Services</h2>
+            <h3>4.1 Advertisements</h3>
+            <p>HashFlow Pro uses Google AdSense to display advertisements. AdSense may:</p>
+            <ul>
+                <li>Use cookies to serve personalized ads based on your browsing history</li>
+                <li>Collect anonymous data about ad performance</li>
+                <li>Use your IP address for geographic targeting</li>
+            </ul>
+            <p>You can opt out of personalized advertising through Google's <a href="https://adssettings.google.com" style="color: var(--primary-light);">Ad Settings</a>.</p>
+            
+            <h3>4.2 Font Awesome Icons</h3>
+            <p>We use Font Awesome for icons. Font Awesome may collect limited usage data as per their <a href="https://fontawesome.com/privacy" style="color: var(--primary-light);">privacy policy</a>.</p>
+            
+            <h2>5. Cookies and Local Storage</h2>
+            <p>HashFlow Pro uses minimal browser storage:</p>
+            <ul>
+                <li><strong>Local Storage:</strong> Stores your theme preference (dark/light mode) locally on your device</li>
+                <li><strong>Session Storage:</strong> Temporarily stores current tool state during your browsing session</li>
+                <li><strong>No Tracking Cookies:</strong> We do not use cookies for user tracking or profiling</li>
+            </ul>
+            
+            <h2>6. Children's Privacy</h2>
+            <p>HashFlow Pro does not knowingly collect any personal information from children under the age of 13. Our tools are designed for general audiences and process all data locally.</p>
+            
+            <h2>7. Data Security</h2>
+            <p>Since we don't collect or store your content data on our servers, the security of your information is primarily in your hands:</p>
+            <ul>
+                <li>All processing happens in your browser's secure sandbox</li>
+                <li>We use HTTPS encryption for all page loads</li>
+                <li>Regular security audits of our codebase</li>
+                <li>No database of user content to be compromised</li>
+            </ul>
+            
+            <h2>8. Your Rights and Choices</h2>
+            <p>You have full control over your data when using HashFlow Pro:</p>
+            <ul>
+                <li><strong>Right to Access:</strong> You can review what (minimal) data we collect through our open-source analytics</li>
+                <li><strong>Right to Deletion:</strong> Since we don't store your content, there's nothing to delete</li>
+                <li><strong>Opt-Out Options:</strong> You can block third-party cookies in your browser settings</li>
+                <li><strong>Local Control:</strong> Clear your browser's local storage to remove theme preferences</li>
+            </ul>
+            
+            <h2>9. International Data Transfers</h2>
+            <p>HashFlow Pro operates globally. Since we don't collect your content data, there are no international transfers of personal information. Minimal analytics data may be processed in various countries but is always anonymized.</p>
+            
+            <h2>10. Changes to This Policy</h2>
+            <p>We may update this privacy policy periodically. We will notify users of any material changes by:</p>
+            <ul>
+                <li>Updating the "Last Updated" date at the top of this page</li>
+                <li>Posting a notice on our homepage for significant changes</li>
+                <li>Providing clear summaries of what has changed</li>
+            </ul>
+            
+            <div class="update-history">
+                <h3>Update History</h3>
+                <p><strong>October 26, 2023:</strong> Initial privacy policy published</p>
+                <p><strong>Key Principle Established:</strong> All processing happens locally in the user's browser</p>
+            </div>
+            
+            <h2>11. Contact Us</h2>
+            <p>If you have questions about this privacy policy or our privacy practices, please contact us:</p>
+            <ul>
+                <li><strong>Email:</strong> privacy@hashflowpro.com</li>
+                <li><strong>Subject Line:</strong> "Privacy Policy Inquiry"</li>
+            </ul>
+            <p>We typically respond within 48 hours.</p>
+            
+            <div class="privacy-highlight" style="margin-top: 40px;">
+                <h4><i class="fas fa-user-shield"></i> Summary: Why HashFlow Pro is Privacy-Friendly</h4>
+                <ul>
+                    <li>✅ No account registration required</li>
+                    <li>✅ Your content never leaves your device</li>
+                    <li>✅ No tracking of your social media activity</li>
+                    <li>✅ No selling of user data to third parties</li>
+                    <li>✅ Transparent about the minimal data we do collect</li>
+                    <li>✅ Built with privacy as a core feature, not an afterthought</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p style="text-align: center;">© 2023 HashFlow Pro | <a href="index.html" style="color: var(--primary-light);">Home</a> | <a href="about.html" style="color: var(--primary-light);">About Us</a> | <a href="contact.html" style="color: var(--primary-light);">Contact</a> | <a href="disclaimer.html" style="color: var(--primary-light);">Disclaimer</a></p>
+            <p style="text-align: center; margin-top: 10px;">Privacy-First Hashtag Generation Tools</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple theme detection
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
+    </script>
+</body>
+</html>
